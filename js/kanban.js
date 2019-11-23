@@ -26,7 +26,7 @@ const create_item = () => {
   item.appendChild(input);
   let save_btn = document.createElement('button');
   save_btn.innerHTML = 'Save';
-  
+  save_btn.addEventListener('click', event => event.dataTransfer.save_btn());
 };
 
 document.querySelectorAll('.drop').forEach(element => {
